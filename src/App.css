@@ -1,0 +1,38 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+}
+
+nav li:first-child {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+footer,
+footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+footer {
+  margin-top: auto;
+  margin-bottom: 0;
+  padding: 10px;
+}
+
+footer a svg {
+  color: var(--text);
+}

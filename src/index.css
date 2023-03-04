@@ -1,14 +1,17 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  font-weight: 400;
-
   --dark: rgb(20, 20, 20);
   --light: white;
   --theme-color: rgb(99, 177, 255);
 
+  --text: var(--dark);
+  --bg-color: var(--light);
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+
   color-scheme: light dark;
-  color: var(--dark);
-  background-color: var(--light);
+  color: var(--text);
+  background-color: var(--bg-color);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -17,9 +20,13 @@
   -webkit-text-size-adjust: 100%;
 }
 
+body {
+  margin: 0;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
-    color: var(--light);
-    background-color: var(--dark);
+    --text: var(--light);
+    --bg-color: var(--dark);
   }
 }
