@@ -4,6 +4,7 @@
 
   --dark: rgb(20, 20, 20);
   --light: white;
+  --theme-color: rgb(99, 177, 255);
 
   color-scheme: light dark;
   color: var(--dark);
