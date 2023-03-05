@@ -2,6 +2,10 @@ img {
   width: 100%;
 }
 
+p {
+  margin: 0;
+}
+
 .App {
   display: flex;
   flex-direction: column;
@@ -28,6 +32,10 @@ img {
   flex-direction: column;
 }
 
+.grid {
+  display: grid;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -42,8 +50,25 @@ nav li:first-child {
   margin-left: 0;
 }
 
+.about-me {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 15px;
+}
+
+.tech-stack {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.tech-stack span,
+.tech-stack svg {
+  --size: 40px;
+  height: var(--size);
+  width: var(--size);
+}
+
 .projects-list {
-  display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 30px;
 }
