@@ -1,6 +1,6 @@
 :root {
   --dark: rgb(20, 20, 20);
-  --light: white;
+  --light: rgb(245, 245, 245);
   --theme-color: rgb(99, 177, 255);
 
   --text: var(--dark);
@@ -22,6 +22,11 @@
 
 body {
   margin: 0;
+}
+
+button {
+  padding: 0;
+  border: none;
 }
 
 @media (prefers-color-scheme: light) {

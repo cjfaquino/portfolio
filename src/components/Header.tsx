@@ -4,7 +4,7 @@ function Header() {
   return (
     <header>
       <nav>
-        <ul>
+        <ul className='flex'>
           <li>Christian Aquino</li>
           <li>Home</li>
           <li>Projects</li>

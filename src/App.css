@@ -1,3 +1,7 @@
+img {
+  width: 100%;
+}
+
 .App {
   display: flex;
   flex-direction: column;
@@ -7,16 +11,76 @@
   padding: 0 20px;
 }
 
-nav ul {
-  list-style: none;
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.flex {
   display: flex;
-  gap: 15px;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  list-style: none;
   padding: 0;
+}
+
+nav ul {
+  gap: 15px;
 }
 
 nav li:first-child {
   margin-right: auto;
   margin-left: 0;
+}
+
+.projects-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.card-container,
+.card-container button {
+  background-color: white;
+}
+
+.card-container {
+  --move-laptop: translateX(15px);
+  min-height: 200px;
+  overflow: hidden;
+  border-radius: 7px;
+  isolation: isolate;
+}
+
+.laptop-container {
+  padding: 0;
+  border: none;
+}
+
+.laptop-container {
+  transform: translateX(40px);
+  transition: transform 0.2s ease-in-out;
+  width: 150%;
+}
+
+.card-container:hover .laptop-container {
+  transform: var(--move-laptop);
+}
+
+.inside-laptop {
+  height: 53%;
+  object-fit: contain;
+  top: 20.55%;
+  left: 4.9%;
 }
 
 footer,
@@ -35,4 +99,15 @@ footer {
 
 footer a svg {
   color: var(--text);
+}
+
+@media (max-width: 632px) {
+  .projects-list {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 15px;
+  }
+
+  .laptop-container {
+    transform: var(--move-laptop);
+  }
 }
