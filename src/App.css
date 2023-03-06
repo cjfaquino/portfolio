@@ -4,6 +4,7 @@ img {
 
 p {
   margin: 0;
+  text-indent: 30px;
 }
 
 code {
@@ -76,6 +77,47 @@ nav li:first-child {
   --size: 40px;
   height: var(--size);
   width: var(--size);
+}
+
+.about-me > :last-child {
+  gap: 15px;
+}
+
+.contact {
+  align-items: center;
+  gap: 10px;
+  margin: 0 auto;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: var(--bg-color);
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 7px;
+  background-color: var(--theme-color);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.contact:hover {
+  background-color: rgba(var(--theme-rgb), 0.85);
+}
+
+.contact:active {
+  background-color: rgba(var(--theme-rgb), 0.7);
+}
+
+.contact.small {
+  visibility: hidden;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  z-index: 2;
+}
+
+.contact.small.show {
+  visibility: visible;
+  opacity: 1;
 }
 
 /* projects */
