@@ -66,19 +66,6 @@ nav li:first-child {
   gap: 15px;
 }
 
-.tech-stack {
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-}
-
-.tech-stack span,
-.tech-stack svg {
-  --size: 40px;
-  height: var(--size);
-  width: var(--size);
-}
-
 .about-me > :last-child {
   gap: 15px;
 }
@@ -168,9 +155,28 @@ nav li:first-child {
 }
 
 .what-i-do .grid {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
 }
+
+.tech-stack {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  min-width: 280px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.tech-stack span,
+.tech-stack svg {
+  --size: 40px;
+  height: var(--size);
+  width: var(--size);
+}
+
+/* footer */
 
 footer,
 footer a {
@@ -198,9 +204,5 @@ footer a svg {
 
   .laptop-container {
     transform: var(--move-laptop);
-  }
-
-  .what-i-do .grid {
-    grid-template-columns: 1fr;
   }
 }
