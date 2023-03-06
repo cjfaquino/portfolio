@@ -38,6 +38,7 @@ function Vite() {
           </linearGradient>
         </defs>
       </svg>
+      Vite
     </span>
   );
 }

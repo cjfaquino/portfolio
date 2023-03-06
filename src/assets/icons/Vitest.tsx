@@ -18,6 +18,7 @@ function Vitest() {
           fillOpacity='0.5'
         />
       </svg>
+      Vitest
     </span>
   );
 }

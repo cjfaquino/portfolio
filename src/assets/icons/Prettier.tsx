@@ -430,6 +430,7 @@ function Prettier() {
           </g>
         </g>
       </svg>
+      Prettier
     </span>
   );
 }

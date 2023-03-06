@@ -169,9 +169,17 @@ nav li:first-child {
   gap: 10px;
 }
 
+.tech-stack span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.7rem;
+  gap: 5px;
+}
+
 .tech-stack span,
 .tech-stack svg {
-  --size: 40px;
+  --size: 60px;
   height: var(--size);
   width: var(--size);
 }
