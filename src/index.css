@@ -1,7 +1,8 @@
 :root {
   --dark: rgb(20, 20, 20);
   --light: rgb(245, 245, 245);
-  --theme-color: rgb(99, 177, 255);
+  --theme-rgb: 99, 177, 255;
+  --theme-color: rgba(var(--theme-rgb), 1);
 
   --text: var(--dark);
   --bg-color: var(--light);
