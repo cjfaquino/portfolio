@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import TypingText from './TypingText';
 
 function AboutMe() {
   const btnRef = useRef(null);
@@ -30,8 +31,11 @@ function AboutMe() {
 
   return (
     <section>
-      <h2>About Me</h2>
-      <div className='about-me grid'>
+      <h2>
+        About Me ~ <TypingText>Developer</TypingText>
+      </h2>
+
+      <div className='about-grid grid'>
         <p>
           {`I take immense pride in crafting beautiful code, be it for my personal passion projects or commissioned work. In today's constantly evolving technological landscape, I am constantly seeking out new and innovative ways to enhance my knowledge of UI/UX and web development, in order to provide my clients with the best possible outcome.`}
         </p>
