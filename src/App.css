@@ -197,20 +197,24 @@ nav li:first-child {
 .card-container {
   --move-laptop: translateX(15px);
   --move-phone: translateY(-70%);
+  --move-tablet: translateX(30%);
   min-height: 200px;
   overflow: hidden;
   border-radius: 5px;
   isolation: isolate;
 }
 
-.laptop-container {
-  padding: 0;
-  border: none;
+.laptop-container,
+.phone-container,
+.tablet-container {
+  transition: transform 0.2s ease-in-out;
 }
 
 .laptop-container {
+  padding: 0;
+  border: none;
   transform: translateX(40px);
-  transition: transform 0.2s ease-in-out;
+
   width: 150%;
 }
 
@@ -218,15 +222,12 @@ nav li:first-child {
   width: 30%;
   left: 60%;
   transform: translateY(10%);
-  transition: transform 0.2s ease-in-out;
 }
 
-.inside-phone {
-  top: 2%;
-  left: 5%;
-  border-radius: 5px;
-  width: 90%;
-  height: 94%;
+.tablet-container {
+  width: 50%;
+  top: 50%;
+  transform: translateX(-100%);
 }
 
 .card-container:hover .laptop-container {
@@ -237,11 +238,31 @@ nav li:first-child {
   transform: var(--move-phone);
 }
 
+.card-container:hover .tablet-container {
+  transform: var(--move-tablet);
+}
+
 .inside-laptop {
   height: 53%;
   object-fit: contain;
   top: 20.55%;
   left: 4.9%;
+}
+
+.inside-tablet {
+  top: 3.5%;
+  left: 4%;
+  border-radius: 3px;
+  width: 91.5%;
+  height: 92.5%;
+}
+
+.inside-phone {
+  top: 2%;
+  left: 5%;
+  border-radius: 5px;
+  width: 90%;
+  height: 94%;
 }
 
 /* what i do */
@@ -310,5 +331,9 @@ footer a svg {
 
   .phone-container {
     transform: var(--move-phone);
+  }
+
+  .tablet-container {
+    transform: var(--move-tablet);
   }
 }
