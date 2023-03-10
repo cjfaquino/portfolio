@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Twitterverse",
+    "path": "twitterverse",
+    "live": "https://twitterverse.christianaquino.net",
+    "repo": "https://github.com/cjfaquino/twitterverse",
+    "desc": "test",
+    "laptopIMG": "/imgs/twitterverse-laptop.png",
+    "phoneIMG": "",
+    "tabletIMG": ""
+  },
+  {
+    "name": "Photo Tagging Game",
+    "path": "photo-tagging",
+    "live": "https://photo-tagging.christianaquino.net",
+    "repo": "https://github.com/cjfaquino/photo-tagging-game",
+    "desc": "test",
+    "laptopIMG": "/imgs/photo-tagging-laptop.png",
+    "phoneIMG": "",
+    "tabletIMG": ""
+  },
+  {
+    "name": "Ten Shabu",
+    "path": "ten-shabu",
+    "live": "https://tenshabu.christianaquino.net",
+    "repo": "https://github.com/cjfaquino/react-tenshabu",
+    "desc": "test",
+    "laptopIMG": "/imgs/tenshabu-laptop.png",
+    "phoneIMG": "",
+    "tabletIMG": ""
+  }
+]

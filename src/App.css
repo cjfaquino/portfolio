@@ -244,9 +244,9 @@ nav li:first-child {
 
 .inside-laptop {
   height: 53%;
-  object-fit: contain;
+  border-radius: 3px;
   top: 20.55%;
-  left: 4.9%;
+  left: 9%;
 }
 
 .inside-tablet {

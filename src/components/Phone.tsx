@@ -1,7 +1,7 @@
 import React from 'react';
 import phone from '../assets/phone.png';
 
-function Phone({ imgURL }: { imgURL: string }) {
+function Phone({ imgURL }: { imgURL: string | undefined }) {
   return imgURL ? (
     <div className='phone-container absolute'>
       <img src={phone} alt='' />

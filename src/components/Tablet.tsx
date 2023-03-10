@@ -1,7 +1,7 @@
 import React from 'react';
 import tablet from '../assets/tablet.png';
 
-function Tablet({ imgURL }: { imgURL: string }) {
+function Tablet({ imgURL }: { imgURL: string | undefined }) {
   return imgURL ? (
     <div className='tablet-container absolute'>
       <img src={tablet} alt='' />

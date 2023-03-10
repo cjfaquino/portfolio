@@ -1,14 +1,15 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
+import projects from '../assets/projects.json';
 
 function Projects() {
   return (
     <section>
       <h2>Projects</h2>
       <ul className='projects-list grid'>
-        {Array.from(Array(10)).map(() => (
+        {projects.map((project) => (
           <li>
-            <ProjectCard />
+            <ProjectCard project={project} />
           </li>
         ))}
       </ul>
