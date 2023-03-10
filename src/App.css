@@ -196,9 +196,10 @@ nav li:first-child {
 
 .card-container {
   --move-laptop: translateX(15px);
+  --move-phone: translateY(-70%);
   min-height: 200px;
   overflow: hidden;
-  border-radius: 7px;
+  border-radius: 5px;
   isolation: isolate;
 }
 
@@ -213,8 +214,27 @@ nav li:first-child {
   width: 150%;
 }
 
+.phone-container {
+  width: 30%;
+  left: 60%;
+  transform: translateY(10%);
+  transition: transform 0.2s ease-in-out;
+}
+
+.inside-phone {
+  top: 2%;
+  left: 5%;
+  border-radius: 5px;
+  width: 90%;
+  height: 94%;
+}
+
 .card-container:hover .laptop-container {
   transform: var(--move-laptop);
+}
+
+.card-container:hover .phone-container {
+  transform: var(--move-phone);
 }
 
 .inside-laptop {
@@ -286,5 +306,9 @@ footer a svg {
 
   .laptop-container {
     transform: var(--move-laptop);
+  }
+
+  .phone-container {
+    transform: var(--move-phone);
   }
 }
