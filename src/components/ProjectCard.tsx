@@ -8,7 +8,7 @@ import Tablet from './Tablet';
 function ProjectCard({ project }: { project: Project }) {
   const navigate = useNavigate();
   return (
-    <div className='card-container relative'>
+    <div className='card-container relative select-disable'>
       <button
         type='button'
         onClick={() => {

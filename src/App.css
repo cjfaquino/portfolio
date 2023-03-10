@@ -65,6 +65,10 @@ code {
   display: grid;
 }
 
+.select-disable {
+  user-select: none;
+}
+
 /* header */
 
 ul {

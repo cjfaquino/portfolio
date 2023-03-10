@@ -15,7 +15,7 @@ function Project() {
   return found ? (
     <main>
       <section className='project'>
-        <div className='container relative'>
+        <div className='container relative select-disable'>
           <Laptop imgURL={found.laptopIMG} />
           <Tablet imgURL={found.tabletIMG || 'test'} />
           <Phone imgURL={found.phoneIMG || 'test'} />
