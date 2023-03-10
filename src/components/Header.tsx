@@ -5,7 +5,9 @@ function Header() {
     <header>
       <nav>
         <ul className='flex'>
-          <li>Christian Aquino</li>
+          <li>
+            <h1>Christian Aquino</h1>
+          </li>
           <li>Home</li>
           <li>Projects</li>
           <li>Contact</li>

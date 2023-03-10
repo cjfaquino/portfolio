@@ -1,4 +1,21 @@
+header,
+footer,
+h1 {
+  font-size: clamp(0.9rem, 2vw, 1rem);
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  font-size: clamp(1.1rem, 3vw, 2rem);
+}
+
 h3 {
+  font-size: clamp(0.9rem, 2vw, 1.3rem);
+  color: var(--theme-color);
+  filter: invert();
   margin-top: 0;
 }
 
@@ -254,7 +271,7 @@ footer a {
 footer {
   margin-top: auto;
   margin-bottom: 0;
-  padding: 10px;
+  padding: 10px 0;
 }
 
 footer a svg {
