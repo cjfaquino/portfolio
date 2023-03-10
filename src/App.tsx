@@ -1,18 +1,19 @@
 import React from 'react';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import AboutMe from './components/AboutMe';
 import Footer from './components/Footer';
 import Header from './components/Header';
-import Projects from './components/Projects';
-import WhatIDo from './components/WhatIDo';
+import Home from './components/Home';
 
 function App() {
   return (
     <div className='App'>
       <Header />
-      <AboutMe />
-      <Projects />
-      <WhatIDo />
+
+      <Routes>
+        <Route path='/' element={<Home />} />
+      </Routes>
+
       <Footer />
     </div>
   );
