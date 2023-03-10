@@ -25,6 +25,14 @@ body {
   margin: 0;
 }
 
+main {
+  margin-bottom: 50px;
+}
+
+a {
+  text-decoration: none;
+}
+
 button {
   padding: 0;
   border: none;

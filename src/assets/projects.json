@@ -4,7 +4,7 @@
     "path": "twitterverse",
     "live": "https://twitterverse.christianaquino.net",
     "repo": "https://github.com/cjfaquino/twitterverse",
-    "desc": "test",
+    "desc": "",
     "laptopIMG": "/imgs/twitterverse-laptop.png",
     "phoneIMG": "",
     "tabletIMG": ""
@@ -14,7 +14,7 @@
     "path": "photo-tagging",
     "live": "https://photo-tagging.christianaquino.net",
     "repo": "https://github.com/cjfaquino/photo-tagging-game",
-    "desc": "test",
+    "desc": "",
     "laptopIMG": "/imgs/photo-tagging-laptop.png",
     "phoneIMG": "",
     "tabletIMG": ""
@@ -24,7 +24,7 @@
     "path": "ten-shabu",
     "live": "https://tenshabu.christianaquino.net",
     "repo": "https://github.com/cjfaquino/react-tenshabu",
-    "desc": "test",
+    "desc": "",
     "laptopIMG": "/imgs/tenshabu-laptop.png",
     "phoneIMG": "",
     "tabletIMG": ""
