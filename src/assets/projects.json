@@ -7,7 +7,7 @@
     "desc": "",
     "laptopIMG": "/imgs/twitterverse-laptop.png",
     "phoneIMG": "",
-    "tabletIMG": ""
+    "tabletIMG": "/imgs/twitterverse-tablet.png"
   },
   {
     "name": "Photo Tagging Game",
@@ -16,17 +16,17 @@
     "repo": "https://github.com/cjfaquino/photo-tagging-game",
     "desc": "",
     "laptopIMG": "/imgs/photo-tagging-laptop.png",
-    "phoneIMG": "",
-    "tabletIMG": ""
+    "phoneIMG": "/imgs/photo-tagging-phone.png",
+    "tabletIMG": "/imgs/photo-tagging-tablet.png"
   },
   {
     "name": "Ten Shabu",
     "path": "ten-shabu",
-    "live": "https://tenshabu.christianaquino.net",
+    "live": "http://tenshabu.com",
     "repo": "https://github.com/cjfaquino/react-tenshabu",
     "desc": "",
     "laptopIMG": "/imgs/tenshabu-laptop.png",
-    "phoneIMG": "",
-    "tabletIMG": ""
+    "phoneIMG": "/imgs/tenshabu-phone.png",
+    "tabletIMG": "/imgs/tenshabu-tablet.png"
   }
 ]

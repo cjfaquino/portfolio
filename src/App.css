@@ -214,19 +214,19 @@ nav a:hover {
 }
 
 .inside-tablet {
-  top: 3.5%;
-  left: 4%;
-  border-radius: clamp(3px, 1vw, 7px);
-  width: 91.6%;
-  height: 92.7%;
+  top: 3.6%;
+  left: 4.9%;
+  width: 90%;
+  height: 92%;
+  z-index: -1;
 }
 
 .inside-phone {
-  top: 2%;
-  left: 5%;
-  border-radius: clamp(7px, 1.5vw, 20px);
-  width: 90%;
-  height: 95%;
+  top: 2.5%;
+  left: 6%;
+  width: 88%;
+  height: 94%;
+  z-index: -1;
 }
 
 .projects-list {
@@ -377,6 +377,12 @@ footer {
 footer a svg {
   color: var(--text);
 }
+
+/* @media (min-width: 632px) {
+  .project .inside-phone {
+    border-radius: 1vw;
+  }
+} */
 
 @media (max-width: 632px) {
   .projects-list {
