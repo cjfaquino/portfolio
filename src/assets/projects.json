@@ -20,6 +20,16 @@
     "tabletIMG": "/imgs/photo-tagging-tablet.png"
   },
   {
+    "name": "Weather",
+    "path": "weather",
+    "live": "https://weather.christianaquino.net",
+    "repo": "https://github.com/cjfaquino/weather-app",
+    "desc": "",
+    "laptopIMG": "/imgs/weather-laptop.png",
+    "phoneIMG": "/imgs/weather-phone.png",
+    "tabletIMG": "/imgs/weather-tablet.png"
+  },
+  {
     "name": "Ten Shabu",
     "path": "ten-shabu",
     "live": "http://tenshabu.com",
