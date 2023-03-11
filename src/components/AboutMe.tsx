@@ -1,13 +1,13 @@
 import React, { useEffect, useRef } from 'react';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import TypingText from './TypingText';
+import user from '../assets/user.json';
 
 function AboutMe() {
   const btnRef = useRef(null);
   const divRef = useRef(null);
 
-  const email = 'Christian@ChristianAquino.net';
-  const mailLink = `mailto:${email}`;
+  const mailLink = `mailto:${user.email}`;
 
   useEffect(() => {
     // show/hide small contact button

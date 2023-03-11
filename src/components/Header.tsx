@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import user from '../assets/user.json';
 
 function Header() {
   return (
@@ -8,14 +9,15 @@ function Header() {
         <ul className='flex'>
           <li>
             <h1>
-              <Link to='/'>Christian Aquino</Link>
+              <Link to='/'>{user.name}</Link>
             </h1>
           </li>
           <li>
             <Link to='/'>Home</Link>
           </li>
-          <li>Projects</li>
-          <li>Contact</li>
+          <li>
+            <a href={`mailto:${user.email}`}>Contact</a>
+          </li>
         </ul>
       </nav>
     </header>
