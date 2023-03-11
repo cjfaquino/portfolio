@@ -30,6 +30,16 @@
     "tabletIMG": "/imgs/weather-tablet.png"
   },
   {
+    "name": "Memory Game",
+    "path": "memory",
+    "live": "https://memory.christianaquino.net",
+    "repo": "https://github.com/cjfaquino/memory-game",
+    "desc": "",
+    "laptopIMG": "/imgs/memory-laptop.png",
+    "phoneIMG": "/imgs/memory-phone.png",
+    "tabletIMG": "/imgs/memory-tablet.png"
+  },
+  {
     "name": "Ten Shabu",
     "path": "ten-shabu",
     "live": "http://tenshabu.com",
