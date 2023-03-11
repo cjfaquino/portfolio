@@ -86,12 +86,12 @@ nav li:first-child {
 }
 
 nav a {
-  color: rgb(90, 90, 90);
+  color: var(--text);
   transition: color 0.2s ease-in-out;
 }
 
-nav a:hover {
-  color: var(--text);
+nav a.active {
+  color: var(--theme-color);
 }
 
 /* about me */

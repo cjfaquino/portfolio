@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import user from '../assets/user.json';
 
 function Header() {
@@ -13,7 +13,7 @@ function Header() {
             </h1>
           </li>
           <li>
-            <Link to='/'>Home</Link>
+            <NavLink to='/'>Home</NavLink>
           </li>
           <li>
             <a href={`mailto:${user.email}`}>Contact</a>
