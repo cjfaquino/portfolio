@@ -16,6 +16,7 @@ function ProjectCard({ project }: { project: Project }) {
         }}
       >
         <Laptop imgURL={project.laptopIMG} />
+        <h4 className='absolute'>{project.name}</h4>
         <Tablet imgURL={project.tabletIMG} />
         <Phone imgURL={project.phoneIMG} />
       </button>

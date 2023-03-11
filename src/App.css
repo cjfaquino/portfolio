@@ -290,6 +290,26 @@ nav a:hover {
   transform: var(--move-tablet);
 }
 
+.card-container:hover h4 {
+  opacity: 1;
+}
+
+.card-container h4 {
+  --opacity: 0.05;
+  margin: 0;
+  top: 10%;
+  left: -90%;
+  width: 200%;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  color: black;
+  opacity: var(--opacity);
+  font-size: clamp(2.3rem, 3vw, 6rem);
+  transform: rotateZ(-90deg);
+  transition: opacity 0.2s ease-in-out;
+}
+
 /* what i do */
 
 .what-i-do .grid {
@@ -409,16 +429,20 @@ footer a svg {
     gap: 15px;
   }
 
-  .laptop-container {
+  .card-container .laptop-container {
     transform: var(--move-laptop);
   }
 
-  .phone-container {
+  .card-container .phone-container {
     transform: var(--move-phone);
   }
 
-  .tablet-container {
+  .card-container .tablet-container {
     transform: var(--move-tablet);
+  }
+
+  .card-container:hover h4 {
+    opacity: var(--opacity);
   }
 
   .project .laptop-container {
