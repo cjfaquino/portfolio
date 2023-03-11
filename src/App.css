@@ -203,6 +203,12 @@ nav a:hover {
   border: none;
 }
 
+.tablet-container,
+.phone-container {
+  box-shadow: rgba(220, 220, 220, 0.25) 0px 13px 27px -5px,
+    rgba(255, 255, 255, 0.3) 0px 8px 16px -8px;
+}
+
 .inside-laptop {
   --radius: clamp(3px, 0.4rem, 10px);
   height: 53%;
@@ -324,6 +330,25 @@ nav a:hover {
   min-height: 40vh;
 }
 
+.project .arrows {
+  justify-content: space-between;
+  align-items: center;
+  --pad: 20px;
+  padding: var(--pad);
+  top: 0;
+  width: calc(100% - (var(--pad) * 2));
+  z-index: 1;
+}
+
+.arrows a {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  color: var(--theme-color);
+  font-size: clamp(0.8rem, 2vw, 1.3rem);
+  filter: invert();
+}
+
 .project .laptop-container {
   width: 75%;
   margin: 0 auto;
@@ -378,12 +403,6 @@ footer a svg {
   color: var(--text);
 }
 
-/* @media (min-width: 632px) {
-  .project .inside-phone {
-    border-radius: 1vw;
-  }
-} */
-
 @media (max-width: 632px) {
   .projects-list {
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
@@ -404,5 +423,10 @@ footer a svg {
 
   .project .laptop-container {
     width: 90%;
+  }
+
+  .project .arrows {
+    --pad: 10px;
+    position: relative;
   }
 }
