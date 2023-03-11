@@ -58,10 +58,10 @@ function Project() {
         <span className='flex'>
           <h2>{project.name} </h2>
           <div className='links flex'>
-            <a href={project.repo}>
+            <a href={project.repo} target='_blank' rel='noreferrer'>
               github <GitHub fontSize='inherit' />
             </a>{' '}
-            <a href={project.live}>
+            <a href={project.live} target='_blank' rel='noreferrer'>
               live <LaunchIcon fontSize='inherit' />
             </a>
           </div>
