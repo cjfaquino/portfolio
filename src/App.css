@@ -44,6 +44,10 @@ code {
   padding: 0 20px;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 .relative {
   position: relative;
 }
@@ -69,11 +73,32 @@ code {
   user-select: none;
 }
 
+.dots {
+  padding: 10px;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.dots .dot {
+  --size: 12px;
+  width: var(--size);
+  height: var(--size);
+  background-color: grey;
+  opacity: 0.5;
+  border-radius: 50px;
+}
+
+.dot.active {
+  opacity: 1;
+}
+
 /* header */
 
 ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 nav ul {
@@ -83,6 +108,9 @@ nav ul {
 nav li:first-child {
   margin-right: auto;
   margin-left: 0;
+}
+nav li {
+  padding: 15px 0;
 }
 
 nav a {
@@ -400,6 +428,41 @@ nav a.active {
   display: flex;
   gap: 5px;
   align-items: center;
+}
+
+.slider-arrows {
+  bottom: 0;
+  left: 50%;
+  width: 50%;
+  transform: translateX(-50%);
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.dots button {
+  border-radius: 50px;
+  padding: 10px;
+  color: black;
+  background-color: transparent;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.dots button:hover {
+  background-color: rgba(128, 128, 128, 0.5);
+}
+
+.slider {
+  isolation: isolate;
+}
+
+.slider li {
+  width: 100%;
+  height: inherit;
+}
+
+.slider .screenshot {
+  height: inherit;
+  object-fit: contain;
 }
 
 /* footer */
