@@ -17,5 +17,12 @@
     "project": "./tsconfig.json"
   },
   "plugins": ["react"],
-  "rules": {}
+  "rules": {
+    "react/jsx-props-no-spreading": [
+      "error",
+      {
+        "exceptions": ["TechStack"]
+      }
+    ]
+  }
 }
