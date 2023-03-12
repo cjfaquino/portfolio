@@ -4,7 +4,7 @@
     "path": "twitterverse",
     "live": "https://twitterverse.christianaquino.net",
     "repo": "https://github.com/cjfaquino/twitterverse",
-    "desc": "",
+    "desc": "Twitterverse is a social media platform that allows users to post short messages of up to 280 characters, follow other users, and engage with their content through likes, comments, and retweets. The platform typically includes a feed that displays tweets from the users a person follows. The interface usually includes features for customizing profiles, including profile pictures and bios, and searching for content based on keywords or hashtags. Overall, Twitterverse aims to replicate the core functionalities and user experience of the original Twitter platform.",
     "laptopIMG": "/imgs/twitterverse-laptop.png",
     "phoneIMG": "",
     "tabletIMG": "/imgs/twitterverse-tablet.png"
@@ -14,7 +14,7 @@
     "path": "photo-tagging",
     "live": "https://photo-tagging.christianaquino.net",
     "repo": "https://github.com/cjfaquino/photo-tagging-game",
-    "desc": "",
+    "desc": "In the Photo Tagging Game, players search for hidden characters within busy, colorful illustrations. Each level features a different scene with dozens of people, animals, and objects, and the goal is to find and tag the specific character indicated by the game. The game often includes various levels of difficulty and time limits, challenging players to sharpen their observation and concentration skills. The Photo Tagging Game can be enjoyed by individuals or groups, and offers a fun and interactive way to pass the time while also improving cognitive abilities.",
     "laptopIMG": "/imgs/photo-tagging-laptop.png",
     "phoneIMG": "/imgs/photo-tagging-phone.png",
     "tabletIMG": "/imgs/photo-tagging-tablet.png"
@@ -24,7 +24,7 @@
     "path": "weather",
     "live": "https://weather.christianaquino.net",
     "repo": "https://github.com/cjfaquino/weather-app",
-    "desc": "",
+    "desc": "Weather is a platform that provides current weather conditions and forecasts for locations worldwide. Users can access detailed information about temperature, humidity, wind speed and direction, precipitation, and atmospheric pressure for any city in the world. The platform also offers features such as historical weather data, severe weather alerts, and interactive maps. Users can customize their experience by selecting their preferred units of measurement and saving their favorite locations. Weather is a reliable and comprehensive resource for staying informed about weather conditions, whether planning a trip, monitoring local conditions, or just staying curious.",
     "laptopIMG": "/imgs/weather-laptop.png",
     "phoneIMG": "/imgs/weather-phone.png",
     "tabletIMG": "/imgs/weather-tablet.png"
@@ -34,7 +34,7 @@
     "path": "memory",
     "live": "https://memory.christianaquino.net",
     "repo": "https://github.com/cjfaquino/memory-game",
-    "desc": "",
+    "desc": "Memory Game is a challenging game that requires players to remember which images they have previously selected. The game involves a grid of images, and players must choose a new image that they have not yet selected to continue playing. Each time they choose a new image, the grid reshuffles, making it harder to remember previous selections. If a player chooses an image they have already selected, they lose the game. The game can be played alone or with others, and requires a keen sense of memory and strategy to succeed.",
     "laptopIMG": "/imgs/memory-laptop.png",
     "phoneIMG": "/imgs/memory-phone.png",
     "tabletIMG": "/imgs/memory-tablet.png"
@@ -44,7 +44,7 @@
     "path": "ten-shabu",
     "live": "http://tenshabu.com",
     "repo": "https://github.com/cjfaquino/react-tenshabu",
-    "desc": "",
+    "desc": "Experience the warmth and comfort of Japanese hot pot with every delicious bite. Our hot pot is a feast for the senses, featuring tender slices of meat, fresh vegetables, and savory broth that's bursting with flavor. Dip your favorite ingredients into the steaming pot, cooking them to perfection right at your table. Whether you're looking for a satisfying meal with friends or a cozy night in, our Japanese hot pot will satisfy your cravings and warm your heart. Come indulge in the tradition and taste of Japanese hot pot today!",
     "laptopIMG": "/imgs/tenshabu-laptop.png",
     "phoneIMG": "/imgs/tenshabu-phone.png",
     "tabletIMG": "/imgs/tenshabu-tablet.png"
