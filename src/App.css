@@ -75,18 +75,28 @@ code {
 
 .dots {
   padding: 10px;
-  gap: 5px;
+  gap: 10px;
   justify-content: center;
   align-items: center;
 }
 
+.dots button {
+  display: flex;
+  align-items: center;
+}
+
 .dots .dot {
-  --size: 12px;
+  --size: 15px;
+  padding: 0;
   width: var(--size);
   height: var(--size);
   background-color: grey;
   opacity: 0.5;
   border-radius: 50px;
+}
+
+.dots .dot:hover {
+  background-color: rgba(128, 128, 128, 0.5);
 }
 
 .dot.active {
@@ -447,14 +457,6 @@ nav a.active {
   transition: background-color 0.2s ease-in-out;
 }
 
-.dots button:hover {
-  background-color: rgba(128, 128, 128, 0.5);
-}
-
-.slider {
-  isolation: isolate;
-}
-
 .slider li {
   width: 100%;
   height: inherit;
@@ -463,6 +465,15 @@ nav a.active {
 .slider .screenshot {
   height: inherit;
   object-fit: contain;
+}
+
+.dots .slider-arrow {
+  font-size: 1.2rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.slider-arrow:hover {
+  color: var(--theme-color);
 }
 
 /* footer */

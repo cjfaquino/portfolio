@@ -134,7 +134,7 @@ function Project() {
           </ul>
 
           <div className='dots flex'>
-            <button type='button' onClick={prevImg}>
+            <button type='button' onClick={prevImg} className='slider-arrow'>
               <ArrowBackIosNewIcon fontSize='inherit' />
             </button>
 
@@ -150,7 +150,7 @@ function Project() {
               </button>
             ))}
 
-            <button type='button' onClick={nextImg}>
+            <button type='button' onClick={nextImg} className='slider-arrow'>
               <ArrowForwardIosIcon fontSize='inherit' />
             </button>
           </div>
