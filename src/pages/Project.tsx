@@ -16,6 +16,7 @@ import Phone from '../components/Phone';
 import Tablet from '../components/Tablet';
 import { Project as IProject } from '../interfaces/Project';
 import useWindowSize from '../hooks/useWindowSize';
+import TechStack from '../components/TechStack';
 
 function Project() {
   const params = useParams();
@@ -168,10 +169,13 @@ function Project() {
           </div>
         </span>
 
-        <p>
-          {project.desc ||
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor possimus facere ab. A magnam quasi facilis sed quae, nesciunt tenetur vero itaque similique porro, placeat totam fuga sapiente! Error, ipsa.'}
-        </p>
+        <div className='grid'>
+          <p>
+            {project.desc ||
+              'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor possimus facere ab. A magnam quasi facilis sed quae, nesciunt tenetur vero itaque similique porro, placeat totam fuga sapiente! Error, ipsa.'}
+          </p>
+          <TechStack {...project.tech} />
+        </div>
       </section>
     </main>
   ) : null;

@@ -1,3 +1,5 @@
+import { Tech } from './Tech';
+
 export interface Project {
   name: string;
   path: string;
@@ -7,4 +9,5 @@ export interface Project {
   laptopIMG: string;
   phoneIMG?: string;
   tabletIMG?: string;
+  tech: Tech;
 }

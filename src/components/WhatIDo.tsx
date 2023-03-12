@@ -35,7 +35,7 @@ function WhatIDo() {
             effectively showcasing their optimal features.
           </p>
         </div>
-        <TechStack />
+        <TechStack all />
       </div>
     </section>
   );

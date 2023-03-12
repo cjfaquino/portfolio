@@ -15,28 +15,55 @@ import Typescript from '../assets/icons/Typescript';
 import Vite from '../assets/icons/Vite';
 import Vitest from '../assets/icons/Vitest';
 import Webpack from '../assets/icons/Webpack';
+import { Tech } from '../interfaces/Tech';
 
-function TechStack() {
+interface IProps extends Tech {
+  all?: boolean;
+}
+
+function TechStack({
+  all,
+  html,
+  css,
+  js,
+  ts,
+  react,
+  vite,
+  vitest,
+  jest,
+  eslint,
+  prettier,
+  webpack,
+  babel,
+  firebase,
+  docker,
+  git,
+  npm,
+}: IProps) {
   return (
     <div className='tech-stack flex'>
-      <HTML5 />
-      <CSS3 />
-      <Javascript />
-      <Typescript />
-      <ReactIcon />
-      <Vite />
-      <Vitest />
-      <Jest />
-      <ESLint />
-      <Prettier />
-      <Webpack />
-      <Babel />
-      <Firebase />
-      <Docker />
-      <Git />
-      <NPM />
+      {(html || all) && <HTML5 />}
+      {(css || all) && <CSS3 />}
+      {(js || all) && <Javascript />}
+      {(ts || all) && <Typescript />}
+      {(react || all) && <ReactIcon />}
+      {(vite || all) && <Vite />}
+      {(vitest || all) && <Vitest />}
+      {(jest || all) && <Jest />}
+      {(eslint || all) && <ESLint />}
+      {(prettier || all) && <Prettier />}
+      {(webpack || all) && <Webpack />}
+      {(babel || all) && <Babel />}
+      {(firebase || all) && <Firebase />}
+      {(docker || all) && <Docker />}
+      {(git || all) && <Git />}
+      {(npm || all) && <NPM />}
     </div>
   );
 }
+
+TechStack.defaultProps = {
+  all: false,
+};
 
 export default TechStack;
