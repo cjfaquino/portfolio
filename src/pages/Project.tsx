@@ -170,10 +170,7 @@ function Project() {
         </span>
 
         <div className='info grid'>
-          <p>
-            {project.desc ||
-              'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor possimus facere ab. A magnam quasi facilis sed quae, nesciunt tenetur vero itaque similique porro, placeat totam fuga sapiente! Error, ipsa.'}
-          </p>
+          <div dangerouslySetInnerHTML={{ __html: project.desc }} />
 
           <TechStack {...project.tech} />
         </div>

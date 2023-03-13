@@ -26,7 +26,11 @@ img {
 
 p {
   margin: 0;
-  text-indent: 30px;
+  text-indent: 20px;
+}
+
+p + p {
+  margin-top: 15px;
 }
 
 code {
