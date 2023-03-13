@@ -22,14 +22,14 @@
     }
   },
   {
-    "name": "Photo Tagging Game",
-    "path": "photo-tagging",
-    "live": "https://photo-tagging.christianaquino.net",
-    "repo": "https://github.com/cjfaquino/photo-tagging-game",
-    "desc": "<p>The <strong>Photo Tagging Game</strong> is a thrilling and colorful game that challenges players to <strong>search for hidden characters</strong> within busy illustrations.</p> <p>Each level features a different scene with dozens of people, animals, and objects, making it <strong>exciting and engaging</strong> to play.</p> <p>The objective of the game is to find and tag the specific character indicated by the game, often including various levels of difficulty and time limits to <strong>test players' observation and concentration skills</strong>.</p> <p>Whether you play the game individually or with a group of friends, the Photo Tagging Game offers a <strong>fun and interactive</strong> way to pass the time while also <strong>improving cognitive abilities</strong>.</p>",
-    "laptopIMG": "/imgs/photo-tagging-laptop.png",
-    "phoneIMG": "/imgs/photo-tagging-phone.png",
-    "tabletIMG": "/imgs/photo-tagging-tablet.png",
+    "name": "Hidden Hunter",
+    "path": "hidden-hunter",
+    "live": "https://hidden-hunter.christianaquino.net",
+    "repo": "https://github.com/cjfaquino/hidden-hunter",
+    "desc": "<p>The <strong>Hidden Hunter</strong> is a thrilling and colorful game that challenges players to <strong>search for hidden characters</strong> within busy illustrations.</p> <p>Each level features a different scene with dozens of people, animals, and objects, making it <strong>exciting and engaging</strong> to play.</p> <p>The objective of the game is to find and tag the specific character indicated by the game, often including various levels of difficulty and time limits to <strong>test players' observation and concentration skills</strong>.</p> <p>Whether you play the game individually or with a group of friends, the Hidden Hunter offers a <strong>fun and interactive</strong> way to pass the time while also <strong>improving cognitive abilities</strong>.</p>",
+    "laptopIMG": "/imgs/hidden-hunter-laptop.png",
+    "phoneIMG": "/imgs/hidden-hunter-phone.png",
+    "tabletIMG": "/imgs/hidden-hunter-tablet.png",
     "tech": {
       "html": true,
       "css": true,
