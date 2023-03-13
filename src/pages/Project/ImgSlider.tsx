@@ -72,25 +72,6 @@ function ImgSlider({ project }: IProps) {
 
   return photos ? (
     <>
-      <ul className='slider' style={{ height: `${imgHeight}px` }}>
-        {photos?.at(imgIndex)}{' '}
-        <li
-          style={{ height: 'fit-content', top: 0 }}
-          className='absolute hidden'
-        >
-          <div className='laptop-container relative'>
-            <img
-              src={laptop}
-              alt=''
-              ref={laptopRef}
-              onLoad={(e) => {
-                setImgHeight((e.target as HTMLElement).clientHeight);
-              }}
-            />
-          </div>
-        </li>
-      </ul>
-
       <div className='dots flex'>
         <button type='button' onClick={prevImg} className='slider-arrow'>
           <ArrowBackIosNewIcon fontSize='inherit' />
@@ -112,6 +93,25 @@ function ImgSlider({ project }: IProps) {
           <ArrowForwardIosIcon fontSize='inherit' />
         </button>
       </div>
+
+      <ul className='slider' style={{ height: `${imgHeight}px` }}>
+        {photos?.at(imgIndex)}{' '}
+        <li
+          style={{ height: 'fit-content', top: 0 }}
+          className='absolute hidden'
+        >
+          <div className='laptop-container relative'>
+            <img
+              src={laptop}
+              alt=''
+              ref={laptopRef}
+              onLoad={(e) => {
+                setImgHeight((e.target as HTMLElement).clientHeight);
+              }}
+            />
+          </div>
+        </li>
+      </ul>
     </>
   ) : null;
 }

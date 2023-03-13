@@ -39,19 +39,15 @@ function Project() {
   return project && index !== null ? (
     <main>
       <section className='project'>
-        <div className='container relative select-disable'>
-          <div className='arrows relative flex'>
-            <Link to={`/${projects.at(index - 1)!.path}`}>
-              <ArrowBackIosNewIcon fontSize='inherit' />{' '}
-              {projects.at(index - 1)!.name}
-            </Link>
-            <Link to={`/${projects.at((index + 1) % projects.length)!.path}`}>
-              {projects.at((index + 1) % projects.length)!.name}{' '}
-              <ArrowForwardIosIcon fontSize='inherit' />
-            </Link>
-          </div>
-
-          <ImgSlider project={project} />
+        <div className='arrows relative flex'>
+          <Link to={`/${projects.at(index - 1)!.path}`}>
+            <ArrowBackIosNewIcon fontSize='inherit' />{' '}
+            {projects.at(index - 1)!.name}
+          </Link>
+          <Link to={`/${projects.at((index + 1) % projects.length)!.path}`}>
+            {projects.at((index + 1) % projects.length)!.name}{' '}
+            <ArrowForwardIosIcon fontSize='inherit' />
+          </Link>
         </div>
 
         <span className='flex'>
@@ -70,6 +66,10 @@ function Project() {
           <div dangerouslySetInnerHTML={{ __html: project.desc }} />
 
           <TechStack {...project.tech} />
+        </div>
+
+        <div className='container relative select-disable'>
+          <ImgSlider project={project} />
         </div>
       </section>
     </main>
