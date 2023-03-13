@@ -4,10 +4,10 @@ import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import React, { useEffect, useLayoutEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import projects from '../assets/projects.json';
-import { Project as IProject } from '../interfaces/Project';
-import TechStack from '../components/TechStack';
-import ImgSlider from '../components/ImgSlider';
+import projects from '../../assets/projects.json';
+import { Project as IProject } from '../../interfaces/Project';
+import TechStack from '../../components/TechStack';
+import ImgSlider from './ImgSlider';
 
 function Project() {
   const params = useParams();

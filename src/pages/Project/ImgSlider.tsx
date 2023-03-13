@@ -1,12 +1,12 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import { Project } from '../interfaces/Project';
-import Laptop from './Laptop';
-import laptop from '../assets/laptop.jpeg';
-import useWindowSize from '../hooks/useWindowSize';
-import Phone from './Phone';
-import Tablet from './Tablet';
+import { Project } from '../../interfaces/Project';
+import Laptop from '../../components/Laptop';
+import laptop from '../../assets/laptop.jpeg';
+import useWindowSize from '../../hooks/useWindowSize';
+import Phone from '../../components/Phone';
+import Tablet from '../../components/Tablet';
 
 interface IProps {
   project: Project;
