@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import TypingText from './TypingText';
-import user from '../assets/user.json';
+import user from '../../assets/user.json';
 
 function AboutMe() {
   const btnRef = useRef(null);

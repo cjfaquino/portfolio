@@ -1,9 +1,9 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Project } from '../interfaces/Project';
-import Laptop from './Laptop';
-import Phone from './Phone';
-import Tablet from './Tablet';
+import { Project } from '../../interfaces/Project';
+import Laptop from '../../components/Laptop';
+import Phone from '../../components/Phone';
+import Tablet from '../../components/Tablet';
 
 function ProjectCard({ project }: { project: Project }) {
   const navigate = useNavigate();

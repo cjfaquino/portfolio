@@ -1,7 +1,7 @@
 import React from 'react';
-import AboutMe from '../components/AboutMe';
-import Projects from '../components/Projects';
-import WhatIDo from '../components/WhatIDo';
+import AboutMe from './AboutMe';
+import Projects from './Projects';
+import WhatIDo from './WhatIDo';
 
 function Home() {
   return (

@@ -1,6 +1,6 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
-import projects from '../assets/projects.json';
+import projects from '../../assets/projects.json';
 
 function Projects() {
   return (
