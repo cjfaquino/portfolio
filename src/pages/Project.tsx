@@ -169,11 +169,12 @@ function Project() {
           </div>
         </span>
 
-        <div className='grid'>
+        <div className='info grid'>
           <p>
             {project.desc ||
               'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor possimus facere ab. A magnam quasi facilis sed quae, nesciunt tenetur vero itaque similique porro, placeat totam fuga sapiente! Error, ipsa.'}
           </p>
+
           <TechStack {...project.tech} />
         </div>
       </section>
