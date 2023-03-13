@@ -10,6 +10,8 @@ function AboutMe() {
   const mailLink = `mailto:${user.email}`;
 
   useEffect(() => {
+    let scrollObserver: IntersectionObserver;
+
     // show/hide small contact button
     if (divRef) {
       const options = {
@@ -17,7 +19,8 @@ function AboutMe() {
         threshold: 1,
       };
 
-      const scrollObserver = new IntersectionObserver((entries) => {
+      // create IntersectionObserver
+      scrollObserver = new IntersectionObserver((entries) => {
         const entry = entries[0];
         (btnRef.current! as Element).classList.toggle(
           'show',
@@ -25,8 +28,14 @@ function AboutMe() {
         );
       }, options);
 
+      // observe div containing contact me button
       scrollObserver.observe(divRef.current!);
     }
+
+    return () => {
+      // clean IntersectionObserver
+      scrollObserver.disconnect();
+    };
   }, [divRef]);
 
   return (
