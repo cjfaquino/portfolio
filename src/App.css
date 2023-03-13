@@ -29,10 +29,6 @@ p {
   text-indent: 20px;
 }
 
-p + p {
-  margin-top: 15px;
-}
-
 code {
   background-color: rgb(220, 220, 220);
   border-radius: 5px;
@@ -427,6 +423,10 @@ nav a.active {
   bottom: 25%;
   right: 3%;
   transform: rotateY(-30deg) rotateX(10deg);
+}
+
+.project p + p {
+  margin-top: 15px;
 }
 
 .project span {
