@@ -64,6 +64,27 @@
     }
   },
   {
+    "name": "Shopping Cart",
+    "path": "shopping-cart",
+    "live": "https://shopping.christianaquino.net",
+    "repo": "https://github.com/cjfaquino/shopping-cart",
+    "desc": "<p><strong>Introducing our revolutionary shopping cart app!</strong> With our user-friendly interface, shopping has never been easier. Keep track of all your desired items in your virtual cart, allowing for a seamless checkout process.</p> <p>Discover new products with our <em>related items</em> feature. Say goodbye to the hassle of shopping, and hello to convenience with our shopping cart app.</p>",
+    "laptopIMG": "/imgs/shopping-laptop.png",
+    "phoneIMG": "/imgs/shopping-phone.png",
+    "tabletIMG": "/imgs/shopping-tablet.png",
+    "tech": {
+      "html": true,
+      "css": true,
+      "js": true,
+      "react": true,
+      "vite": true,
+      "eslint": true,
+      "prettier": true,
+      "git": true,
+      "npm": true
+    }
+  },
+  {
     "name": "Memory Game",
     "path": "memory",
     "live": "https://memory.christianaquino.net",
@@ -93,6 +114,25 @@
     "laptopIMG": "/imgs/tenshabu-laptop.png",
     "phoneIMG": "/imgs/tenshabu-phone.png",
     "tabletIMG": "/imgs/tenshabu-tablet.png",
+    "tech": {
+      "html": true,
+      "css": true,
+      "js": true,
+      "react": true,
+      "prettier": true,
+      "git": true,
+      "npm": true
+    }
+  },
+  {
+    "name": "CV Maker",
+    "path": "cv-maker",
+    "live": "https://cv-maker.christianaquino.net",
+    "repo": "https://github.com/cjfaquino/cv-maker",
+    "desc": "<p><strong>Say hello to your dream job with our professional CV app!</strong> Our user-friendly interface lets you create a polished and customized CV with ease. Highlight your strengths and experience with our expertly crafted phrases, and stand out from the competition. With the ability to save and edit your CV, you'll always be ready for the next opportunity.</p> <p>Get the job you deserve with our professional CV app.</p>",
+    "laptopIMG": "/imgs/cv-maker-laptop.png",
+    "phoneIMG": "/imgs/cv-maker-phone.png",
+    "tabletIMG": "/imgs/cv-maker-tablet.png",
     "tech": {
       "html": true,
       "css": true,
