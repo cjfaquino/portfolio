@@ -8,7 +8,7 @@ function Projects() {
       <h2>Projects</h2>
       <ul className='projects-list grid'>
         {projects.map((project) => (
-          <li>
+          <li key={project.path}>
             <ProjectCard project={project} />
           </li>
         ))}
