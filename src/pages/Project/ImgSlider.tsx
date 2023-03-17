@@ -19,6 +19,7 @@ interface IProps {
 }
 
 function ImgSlider({ project }: IProps) {
+  const [touchPosition, setTouchPosition] = useState<number | null>(null);
   const [imgIndex, setImgIndex] = useState(0);
   const [imgHeight, setImgHeight] = useState(900);
   const [width] = useWindowSize();
@@ -76,6 +77,36 @@ function ImgSlider({ project }: IProps) {
     setImgIndex((prev) => (prev - 1 + photos!.length) % photos!.length);
   }, [photos]);
 
+  const handleTouchStart = (e: React.TouchEvent<HTMLElement>) => {
+    // set initial position
+    const touchDown = e.touches[0].clientX;
+    setTouchPosition(touchDown);
+  };
+
+  const handleTouchMove = (e: React.TouchEvent<HTMLElement>) => {
+    const touchDown = touchPosition;
+
+    if (touchDown === null) {
+      return;
+    }
+
+    const currentTouch = e.touches[0].clientX;
+    const diff = touchDown - currentTouch;
+    const distance = 5;
+
+    // swipe right
+    if (diff > distance) {
+      nextImg();
+    }
+
+    // swipe left
+    if (diff < -distance) {
+      prevImg();
+    }
+
+    setTouchPosition(null);
+  };
+
   useEffect(() => {
     const arrowNav = (e: KeyboardEvent) => {
       // use arrow keys for slider
@@ -116,7 +147,12 @@ function ImgSlider({ project }: IProps) {
         </button>
       </div>
 
-      <ul className='slider' style={{ height: `${imgHeight}px` }}>
+      <ul
+        className='slider'
+        style={{ height: `${imgHeight}px` }}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+      >
         {photos?.at(imgIndex)}{' '}
         <li
           style={{ height: 'fit-content', top: 0 }}
