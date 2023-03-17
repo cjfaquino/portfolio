@@ -1,4 +1,10 @@
-import React, { useEffect, useMemo, useRef, useState } from 'react';
+import React, {
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+} from 'react';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import { Project } from '../../interfaces/Project';
@@ -62,13 +68,29 @@ function ImgSlider({ project }: IProps) {
     return () => {};
   }, [laptopRef, width]);
 
-  const nextImg = () => {
+  const nextImg = useCallback(() => {
     setImgIndex((prev) => (prev + 1) % photos!.length);
-  };
+  }, [photos]);
 
-  const prevImg = () => {
+  const prevImg = useCallback(() => {
     setImgIndex((prev) => (prev - 1 + photos!.length) % photos!.length);
-  };
+  }, [photos]);
+
+  useEffect(() => {
+    const arrowNav = (e: KeyboardEvent) => {
+      // use arrow keys for slider
+      if (e.key === 'ArrowLeft') {
+        prevImg();
+      } else if (e.key === 'ArrowRight') {
+        nextImg();
+      }
+    };
+
+    document.addEventListener('keydown', arrowNav);
+    return () => {
+      document.removeEventListener('keydown', arrowNav);
+    };
+  }, [nextImg, prevImg]);
 
   return photos ? (
     <>
