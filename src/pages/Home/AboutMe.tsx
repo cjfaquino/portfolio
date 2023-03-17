@@ -39,7 +39,7 @@ function AboutMe() {
   }, [divRef]);
 
   return (
-    <section>
+    <section className='about-me'>
       <h2>
         About Me ~ <TypingText>Developer</TypingText>
       </h2>

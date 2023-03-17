@@ -134,6 +134,10 @@ nav a.active {
 
 /* about me */
 
+.about-me a:hover {
+  color: white;
+}
+
 .about-grid {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 15px;
