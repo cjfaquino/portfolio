@@ -123,6 +123,14 @@ function ImgSlider({ project }: IProps) {
     };
   }, [nextImg, prevImg]);
 
+  useEffect(
+    () => () => {
+      // reset index on unmount
+      setImgIndex(0);
+    },
+    [project]
+  );
+
   return photos ? (
     <>
       <div className='dots flex'>
