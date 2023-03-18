@@ -73,6 +73,12 @@ code {
   user-select: none;
 }
 
+.box {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: rgb(235, 235, 235);
+}
+
 .dots {
   padding: 10px;
   gap: 10px;
@@ -139,7 +145,7 @@ nav a.active {
 }
 
 .about-grid {
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 15px;
 }
 
@@ -367,6 +373,7 @@ nav a.active {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  height: fit-content;
 }
 
 .tech-stack span {
@@ -460,12 +467,6 @@ nav a.active {
 .project .tech-stack {
   grid-column-start: unset;
   grid-column-end: unset;
-  justify-content: center;
-  align-items: center;
-  height: fit-content;
-  padding: 15px;
-  border-radius: 10px;
-  background-color: rgb(230, 230, 230);
 }
 
 .slider-arrows {

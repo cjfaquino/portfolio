@@ -41,7 +41,7 @@ function TechStack({
   npm,
 }: IProps) {
   return (
-    <div className='tech-stack flex'>
+    <div className='tech-stack box flex'>
       {(html || all) && <HTML5 />}
       {(css || all) && <CSS3 />}
       {(js || all) && <Javascript />}

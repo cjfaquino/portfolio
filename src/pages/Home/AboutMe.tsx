@@ -44,7 +44,7 @@ function AboutMe() {
         About Me ~ <TypingText>Developer</TypingText>
       </h2>
 
-      <div className='about-grid grid'>
+      <div className='about-grid box grid'>
         <p>
           {`I take immense pride in crafting beautiful code, be it for my personal passion projects or commissioned work. In today's constantly evolving technological landscape, I am constantly seeking out new and innovative ways to enhance my knowledge of UI/UX and web development, in order to provide my clients with the best possible outcome.`}
         </p>
