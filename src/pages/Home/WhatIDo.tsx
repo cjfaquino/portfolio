@@ -6,7 +6,7 @@ function WhatIDo() {
     <section className='what-i-do'>
       <h2>What I Do</h2>
 
-      <div className=' grid'>
+      <div className='grid'>
         <div className='design'>
           <h3>Web Design</h3>
           <p>
