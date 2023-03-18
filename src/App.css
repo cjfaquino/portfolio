@@ -387,7 +387,6 @@ nav a.active {
 .project > .container {
   background: white;
   border-radius: 20px;
-  perspective: 1000px;
   min-height: 40vh;
 }
 
@@ -419,14 +418,12 @@ nav a.active {
   width: 13%;
   bottom: 30%;
   left: 8%;
-  transform: rotateY(30deg) rotateX(10deg);
 }
 
 .project .tablet-container {
   width: 25%;
   bottom: 25%;
   right: 3%;
-  transform: rotateY(-30deg) rotateX(10deg);
 }
 
 .project p + p {
