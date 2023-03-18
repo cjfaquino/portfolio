@@ -56,9 +56,11 @@ function Project() {
             <a href={project.repo} target='_blank' rel='noreferrer'>
               github <GitHub fontSize='inherit' />
             </a>{' '}
-            <a href={project.live} target='_blank' rel='noreferrer'>
-              live <LaunchIcon fontSize='inherit' />
-            </a>
+            {project.path !== 'portfolio' && (
+              <a href={project.live} target='_blank' rel='noreferrer'>
+                live <LaunchIcon fontSize='inherit' />
+              </a>
+            )}
           </div>
         </span>
 

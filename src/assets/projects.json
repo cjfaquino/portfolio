@@ -1,5 +1,26 @@
 [
   {
+    "name": "Portfolio",
+    "path": "portfolio",
+    "live": "https://christianaquino.net",
+    "repo": "https://github.com/cjfaquino/portfolio",
+    "desc": "<p>My web development portfolio showcases a diverse range of projects, highlighting my skills in front-end development. I've tackled complex challenges using various technologies such as <code>HTML</code>, <code>CSS</code>, <code>JavaScript</code>, <code>Typescript</code>, and <code>React</code>. With a focus on user experience and performance, my portfolio exhibits clean, responsive designs and intuitive interfaces. Each project includes the technologies used, providing a comprehensive view of my skills and expertise as a web developer.</p>",
+    "laptopIMG": "/imgs/portfolio-laptop.png",
+    "phoneIMG": "/imgs/portfolio-phone.png",
+    "tabletIMG": "/imgs/portfolio-tablet.png",
+    "tech": {
+      "html": true,
+      "css": true,
+      "ts": true,
+      "react": true,
+      "vite": true,
+      "eslint": true,
+      "prettier": true,
+      "git": true,
+      "npm": true
+    }
+  },
+  {
     "name": "Twitterverse",
     "path": "twitterverse",
     "live": "https://twitterverse.christianaquino.net",
