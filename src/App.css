@@ -543,8 +543,8 @@ footer a svg {
     transform: var(--move-tablet);
   }
 
-  .card-container:hover h4 {
-    opacity: var(--opacity);
+  .card-container h4 {
+    opacity: 0.5;
   }
 
   .project .laptop-container {
