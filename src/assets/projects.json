@@ -16,8 +16,7 @@
       "vite": true,
       "eslint": true,
       "prettier": true,
-      "git": true,
-      "npm": true
+      "firebase": true
     }
   },
   {
@@ -37,9 +36,7 @@
       "firebase": true,
       "vite": true,
       "eslint": true,
-      "prettier": true,
-      "git": true,
-      "npm": true
+      "prettier": true
     }
   },
   {
@@ -59,8 +56,6 @@
       "vite": true,
       "eslint": true,
       "prettier": true,
-      "git": true,
-      "npm": true,
       "firebase": true
     }
   },
@@ -80,9 +75,7 @@
       "webpack": true,
       "babel": true,
       "eslint": true,
-      "prettier": true,
-      "git": true,
-      "npm": true
+      "prettier": true
     }
   },
   {
@@ -101,9 +94,7 @@
       "react": true,
       "vite": true,
       "eslint": true,
-      "prettier": true,
-      "git": true,
-      "npm": true
+      "prettier": true
     }
   },
   {
@@ -122,9 +113,7 @@
       "react": true,
       "vite": true,
       "eslint": true,
-      "prettier": true,
-      "git": true,
-      "npm": true
+      "prettier": true
     }
   },
   {
@@ -140,10 +129,7 @@
       "html": true,
       "css": true,
       "js": true,
-      "react": true,
-      "prettier": true,
-      "git": true,
-      "npm": true
+      "react": true
     }
   },
   {
@@ -160,9 +146,7 @@
       "css": true,
       "js": true,
       "react": true,
-      "prettier": true,
-      "git": true,
-      "npm": true
+      "prettier": true
     }
   }
 ]
