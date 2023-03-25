@@ -1,4 +1,5 @@
 import React from 'react';
+import Algolia from '../assets/icons/Algolia';
 import Babel from '../assets/icons/Babel';
 import CSS3 from '../assets/icons/CSS3';
 import Docker from '../assets/icons/Docker';
@@ -36,6 +37,7 @@ function TechStack({
   webpack,
   babel,
   firebase,
+  algolia,
   docker,
   git,
   npm,
@@ -55,6 +57,7 @@ function TechStack({
       {(webpack || all) && <Webpack />}
       {(babel || all) && <Babel />}
       {(firebase || all) && <Firebase />}
+      {(algolia || all) && <Algolia />}
       {(docker || all) && <Docker />}
       {(git || all) && <Git />}
       {(npm || all) && <NPM />}

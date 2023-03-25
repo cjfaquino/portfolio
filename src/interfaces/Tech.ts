@@ -12,6 +12,7 @@ export interface Tech {
   webpack?: boolean;
   babel?: boolean;
   firebase?: boolean;
+  algolia?: boolean;
   docker?: boolean;
   git?: boolean;
   npm?: boolean;

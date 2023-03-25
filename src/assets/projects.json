@@ -34,6 +34,7 @@
       "ts": true,
       "react": true,
       "firebase": true,
+      "algolia": true,
       "vite": true,
       "eslint": true,
       "prettier": true
